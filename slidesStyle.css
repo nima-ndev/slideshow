@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.box-contaner{
+    width: 80%;
+    height: 650px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.myslide{
+    position: absolute;
+    display: none;
+}
+img{
+    max-width: 100%;
+}
+.myslide:nth-child(3) img{
+    transform: translateY(-18px);
+}
+.myslide:nth-child(2) img{
+    transform: translateY(-160px);
+}
+.myslide:nth-child(1) img{
+    transform: translateY(-30px);
+}
+
+.number{
+    position: absolute;
+    color: white;
+    margin: 15px 0 0 15px;
+    font-size: 30px;
+    z-index: 2;
+}
+.caption{
+    position: absolute;
+    left: 50%;
+    bottom: 22%;
+    margin-left: -65px;
+    color: #b0b0b0;
+    z-index: 2;
+    font-size: 40px;
+}
+.left{
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin: -20px 0 0 15px;
+    cursor: pointer;
+}
+.right{
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -20px;
+    right: 15px;
+    cursor: pointer;
+}
+.circle{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.fa-circle{
+    color: #b0b0b0;
+    cursor: pointer;
+}
+.fa-circle:hover{
+    color: black;
+}
