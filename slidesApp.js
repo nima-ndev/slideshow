@@ -21,3 +21,8 @@ function set(current){
     slides[numberOfslide].style.display='block';  //show the current slide
     dots[numberOfslide].style.color='black';
 }
+
+setInterval(()=>{
+    let current=numberOfslide+1;
+    set(current);
+},4000);
